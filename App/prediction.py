@@ -6,7 +6,7 @@ import potato
 
 def app():
     st.markdown(
-        "<h1 style='text-align: center;'>Plant Diseases Detection</h1>",
+        "<h1 style='text-align: center;'>🦠 Plant Diseases Detection 🦠</h1>",
         unsafe_allow_html=True,
     )
 
