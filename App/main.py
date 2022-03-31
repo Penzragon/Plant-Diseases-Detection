@@ -3,8 +3,8 @@ import home
 import prediction
 
 st.set_page_config(
-    page_title="Forest Fire Detection",
-    page_icon="🌳",
+    page_title="Plant Diseases Detection",
+    page_icon="🌱",
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
