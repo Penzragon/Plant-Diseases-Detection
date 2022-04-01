@@ -15,15 +15,50 @@ def app():
             unsafe_allow_html=True,
         )
 
-        with st.expander("DO NOT OPEN!⛔"):
+        with st.expander("About Us"):
             st.markdown(
-                "<h3 style='text-align: center;'>Aaaaaa!</h3>",
+                "<h3 style='text-align: center;'>Kevin Giovanni Pradana</h3>",
                 unsafe_allow_html=True,
             )
             st.markdown(
-                "<img src='https://media.giphy.com/media/nrXif9YExO9EI/giphy.gif' width='100%'/>",
+                "<p style='text-align: center;'><a href='https://www.linkedin.com/in/kevin-giovanni-pradana-50aa61145/'>Linkedin</a></p>",
                 unsafe_allow_html=True,
             )
+            st.markdown(
+                "<p style='text-align: center;'><a href='https://github.com/KevinGiovanniP'>GitHub</a></p>",
+                unsafe_allow_html=True,
+            )
+
+            st.markdown("<hr>", unsafe_allow_html=True)
+
+            st.markdown(
+                "<h3 style='text-align: center;'>Muhammad Bintang Ramadhan</h3>",
+                unsafe_allow_html=True,
+            )
+            st.markdown(
+                "<p style='text-align: center;'><a href='https://www.linkedin.com/in/muhammad-bintang-ramadhan-8b8b11201/'>Linkedin</a></p>",
+                unsafe_allow_html=True,
+            )
+            st.markdown(
+                "<p style='text-align: center;'><a href='https://github.com/BintangRamadhan837'>GitHub</a></p>",
+                unsafe_allow_html=True,
+            )
+
+            st.markdown("<hr>", unsafe_allow_html=True)
+
+            st.markdown(
+                "<h3 style='text-align: center;'>Rifky Aliffa</h3>",
+                unsafe_allow_html=True,
+            )
+            st.markdown(
+                "<p style='text-align: center;'><a href='https://www.linkedin.com/in/rifkyaliffa/'>Linkedin</a></p>",
+                unsafe_allow_html=True,
+            )
+            st.markdown(
+                "<p style='text-align: center;'><a href='https://github.com/Penzragon'>GitHub</a></p>",
+                unsafe_allow_html=True,
+            )
+
         st.markdown(
             "<p style='text-align: center;'>Made with <span style='color: red'>♥️</span> by <b>Kelompok 2</b></p>",
             unsafe_allow_html=True,
