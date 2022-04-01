@@ -20,7 +20,7 @@ def app():
         pred = corn_model.predict(np.expand_dims(img, axis=0))
         return pred
 
-    corn_model = tf.keras.models.load_model("mobilenetmodel.h5")
+    corn_model = tf.keras.models.load_model("corn_model.h5")
     class_name = ["Gray Leaf Spot", "Common Rust", "Northern Leaf Blight", "Healthy"]
 
     options = st.selectbox("Upload an image", ("Upload", "URL"))
@@ -46,15 +46,6 @@ def app():
                 "<h1 style='text-align: center;'>The predicted result is:</h1>",
                 unsafe_allow_html=True,
             )
-            result = f"<h3 style='text-align: center;'>{class_name[np.argmax(pred)]} ({np.max(pred)*100:.2f}%)</h3>"
+            result = f"<h3 style='text-align: center;'>{class_name[np.argmax(pred)]} ({np.max(pred)*100:.2f}% Confidence)</h3>"
             st.markdown(result, unsafe_allow_html=True)
             st.image(img, use_column_width=True)
-
-    # if img:
-    #     button = st.button("Predict")
-    #     if button:
-    #         st.image(img, use_column_width=True)
-    #         img = Image.open(img)
-    #         pred = load_prep(img)
-    #         st.title(class_name[np.argmax(pred)])
-    #         st.title(f"{np.max(pred)*100:.2f}%")
