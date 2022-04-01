@@ -17,10 +17,10 @@ def app():
     def load_prep(image):
         img = np.array(image)
         img = tf.image.resize(img, (224, 224)) / 255.0
-        pred = corn_model.predict(np.expand_dims(img, axis=0))
+        pred = tomato_model.predict(np.expand_dims(img, axis=0))
         return pred
 
-    corn_model = tf.keras.models.load_model("tomato_model.h5")
+    tomato_model = tf.keras.models.load_model("tomato_model.h5")
     class_name = [
         "Bacterial Spot",
         "Early Blight",
