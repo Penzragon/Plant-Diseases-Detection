@@ -46,6 +46,6 @@ def app():
                 "<h1 style='text-align: center;'>The predicted result is:</h1>",
                 unsafe_allow_html=True,
             )
-            result = f"<h3 style='text-align: center;'>{class_name[np.argmax(pred)]} ({np.max(pred)*100:.2f}% Confidence)</h3>"
+            result = f"<h2 style='text-align: center;'>{class_name[np.argmax(pred)]}<br><span style='font-size: 1.5rem'>{np.max(pred)*100:.2f}% Confidence</span></h2>"
             st.markdown(result, unsafe_allow_html=True)
             st.image(img, use_column_width=True)
