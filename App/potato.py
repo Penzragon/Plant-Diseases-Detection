@@ -8,7 +8,7 @@ from io import BytesIO
 
 def app():
     st.markdown(
-        "<h1 style='text-align: center;'>🥔 Potato 🥔</h1>",
+        "<h1 style='text-align: center;'>🥔 Kentang 🥔</h1>",
         unsafe_allow_html=True,
     )
 
