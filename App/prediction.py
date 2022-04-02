@@ -6,7 +6,11 @@ import potato
 
 def app():
     st.markdown(
-        "<h1 style='text-align: center;'>🦠 Plant Diseases Detection 🦠</h1>",
+        "<h1 style='text-align: center;'>🩺 Apakah Tumbuhanmu Sehat? 🌱</h1>",
+        unsafe_allow_html=True,
+    )
+    st.markdown(
+        "<p style='text-align: center;'>Aplikasi untuk mendeteksi kesehatan tumbuhan berdasarkan kondisi daun.</p>",
         unsafe_allow_html=True,
     )
 
