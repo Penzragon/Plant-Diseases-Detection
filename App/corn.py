@@ -48,7 +48,7 @@ descriptions = {
 
 def app():
     st.markdown(
-        "<h1 style='text-align: center;'>🌽 Corn 🌽</h1>",
+        "<h1 style='text-align: center;'>🌽 Jagung 🌽</h1>",
         unsafe_allow_html=True,
     )
 
