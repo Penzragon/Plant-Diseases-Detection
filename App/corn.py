@@ -82,16 +82,16 @@ def app():
         button = st.button("Predict")
         pred = load_prep(img)
         if button:
+            st.markdown(
+                "<h1 style='text-align: center;'>The predicted result is:</h1>",
+                unsafe_allow_html=True,
+            )
+            result = f"<h3 style='text-align: center;'>{class_name[np.argmax(pred)]} ({np.max(pred)*100:.2f}% Confidence)</h3>"
+            st.markdown(result, unsafe_allow_html=True)
             col1, col2 = st.columns(2)
             with col1:
                 st.image(img, use_column_width=True)
             with col2:
-                st.markdown(
-                    "<h1 style='text-align: center;'>The predicted result is:</h1>",
-                    unsafe_allow_html=True,
-                )
-                result = f"<h3 style='text-align: center;'>{class_name[np.argmax(pred)]} ({np.max(pred)*100:.2f}% Confidence)</h3>"
-                st.markdown(result, unsafe_allow_html=True)
                 if class_name[np.argmax(pred)] != "Healthy":
                     with st.expander("Gejala"):
                         st.write(descriptions[class_name[np.argmax(pred)]]["Gejala"])
