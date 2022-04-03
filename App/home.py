@@ -1,14 +1,13 @@
 import streamlit as st
+from PIL import Image
 
 
 def app():
     col1, col2, col3 = st.columns([1, 2, 1])
 
     with col2:
-        st.markdown(
-            "<h1 style='text-align: center;'>🏠 Home 🏠</h1>",
-            unsafe_allow_html=True,
-        )
+        logo = Image.open("logo.png")
+        st.image(logo, width=300, use_column_width=True)
 
         st.markdown(
             "<p style='text-align: center;'>This simple app is a computer vision project for detecting a forest fire using <strong>Convolutional Neural Network</strong>, you can see the dataset used in this project on <a href='https://www.kaggle.com/datasets/phylake1337/fire-dataset'>Kaggle</a>.</p>",
