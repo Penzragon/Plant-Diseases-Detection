@@ -219,10 +219,6 @@ def app():
         button = st.button("Predict")
         pred = load_prep(img)
         if button:
-            st.markdown(
-                "<h1 style='text-align: center;'>The predicted result is:</h1>",
-                unsafe_allow_html=True,
-            )
             result = f"<h2 style='text-align: center;'>{class_name[np.argmax(pred)]}<br><span style='font-size: 1.5rem'>{np.max(pred)*100:.2f}% Confidence</span></h2>"
             st.markdown(result, unsafe_allow_html=True)
             col1, col2 = st.columns(2)
