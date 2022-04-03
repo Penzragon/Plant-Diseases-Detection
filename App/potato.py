@@ -95,23 +95,23 @@ def app():
                 st.image(img, use_column_width=True)
             with col2:
                 if class_name[np.argmax(pred)] != "Healthy":
-                    with st.expander("Gejala"):
+                    with st.expander("Gejala 🔬"):
                         st.write(descriptions[class_name[np.argmax(pred)]]["Gejala"])
-                    with st.expander("Penyebab"):
+                    with st.expander("Penyebab 🦠"):
                         st.write(descriptions[class_name[np.argmax(pred)]]["Penyebab"])
-                    with st.expander("Pengendalian Hayati"):
+                    with st.expander("Pengendalian Hayati 🌿"):
                         st.write(
                             descriptions[class_name[np.argmax(pred)]][
                                 "Pengendalian hayati"
                             ]
                         )
-                    with st.expander("Pengendalian Kimiawi"):
+                    with st.expander("Pengendalian Kimiawi 🧪"):
                         st.write(
                             descriptions[class_name[np.argmax(pred)]][
                                 "Pengendalian kimiawi"
                             ]
                         )
-                    with st.expander("Pencegahan"):
+                    with st.expander("Pencegahan ⚠️"):
                         for i in descriptions[class_name[np.argmax(pred)]][
                             "Pencegahan"
                         ]:
