@@ -10,7 +10,7 @@ def app():
         st.image(logo, width=300, use_column_width=True)
 
         st.markdown(
-            "<p style='text-align: center;'>This simple app is a computer vision project for detecting a forest fire using <strong>Convolutional Neural Network</strong>, you can see the dataset used in this project on <a href='https://www.kaggle.com/datasets/phylake1337/fire-dataset'>Kaggle</a>.</p>",
+            "<p style='text-align: center;'>This simple app is a computer vision project for detecting disease from a plant's leaf using <strong>Convolutional Neural Network</strong>, you can see the dataset used in this project on <a href='https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset'>Kaggle</a>.</p>",
             unsafe_allow_html=True,
         )
 
