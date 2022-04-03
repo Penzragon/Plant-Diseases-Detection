@@ -247,3 +247,21 @@ def app():
                             "Pencegahan"
                         ]:
                             st.write("• ", i)
+                else:
+                    st.success("Tomat tidak terinfeksi")
+                    st.markdown(
+                        "<h4 style='text-align: center;'>Saran</h4>",
+                        unsafe_allow_html=True,
+                    )
+                    with st.expander("Perawatan 🩺"):
+                        st.write(
+                            "Irigasi yang teratur dan wajar selama tahap pengembangan dan berbuah akan membantu menghindari masalah fisiologis seperti busuk pucuk bunga. Terutama selama tahap berbuah, tanaman membutuhkan jumlah air yang tinggi. Namun, hindari kelembaban daun yang berkepanjangan karena ini mendukung pertumbuhan jamur. Memasang penopang di tanah pada saat penanaman bisa membantu menjaga buah tomat yang tumbuh dari tanah. Di rumah kaca juga dimungkinkan untuk menggunakan tali atau lanjaran khusus."
+                        )
+                    with st.expander("Tanah 🪴"):
+                        st.write(
+                            "Pertumbuhan tanaman tomat bisa disesuaikan dengan tanah liat yang berdrainase baik, dengan pH sedikit asam antara 6 dan 6,8. Zona akar harus dijaga tetap lembab, tetapi tidak basah. Akar tomat dapat tumbuh 3 meter dalam kondisi optimal, sehingga tanah harus gembur dan air dapat mengalir dengan bebas. Tanah keras dan tanah liat yang padat dapat membatasi pertumbuhan di zona akar dan menyebabkan tanaman tidak sehat sehingga menghambat pertumbuhan dan mengurangi hasil panen."
+                        )
+                    with st.expander("Iklim ☁️"):
+                        st.write(
+                            "Tomat adalah tanaman musim panas yang melakukan penyerbukan sendiri. Tomat adalah tanaman rawan suhu beku yang tumbuh subur pada cuaca hangat, dan karenanya harus ditanam setelah musim dingin semi terakhir berlalu. Di daerah-daerah yang memiliki periode bebas salju kurang dari 3½ bulan, tomat sepertinya tidak menguntungkan. Paparan sinar matahari penuh itu penting dan tanaman harus mendapatkan setidaknya 6 jam sinar matahari. Suhu optimal untuk perkecambahan adalah antara 21 dan 27 °C. Suhu di bawah 10 °C dan di atas 35 °C menyebabkan perkecambahan yang sangat buruk. Meskipun tomat dapat ditanam kapan saja setelah periode ini, tomat tumbuh paling baik ketika suhu siang hari di atas 16 °C dan suhu malam hari tidak turun di bawah 12 °C. Sistem ventilasi/pemanas rumah kaca dapat digunakan di area yang tidak memenuhi kebutuhan ini."
+                        )

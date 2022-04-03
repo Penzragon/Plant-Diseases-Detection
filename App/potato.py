@@ -116,3 +116,21 @@ def app():
                             "Pencegahan"
                         ]:
                             st.write("• ", i)
+                else:
+                    st.success("Kentang tidak terinfeksi")
+                    st.markdown(
+                        "<h4 style='text-align: center;'>Saran</h4>",
+                        unsafe_allow_html=True,
+                    )
+                    with st.expander("Perawatan 🩺"):
+                        st.write(
+                            "Gunakan umbi benih yang sehat dan bebas penyakit karena sangat penting untuk keberhasilan panen kentang. Gulma perlu disingkirkan pada saat kanopi berkembang (dalam waktu sekitar 4 minggu setelah tanam) agar tanaman dapat tumbuh dengan baik. Penggundukan tanah di sekitar tanaman setiap 15-20 hari membantu membatasi pertumbuhan gulma dan juga untuk menggemburkan tanah. Karena kentang memiliki kebutuhan unsur hara yang tinggi, pupuk kandang hijau direkomendasikan sebagai salah satu bentuk pemupukan. Mengingat kentang memiliki sistem akar yang dangkal, irigasinya harus ringan. Setelah panen, kentang harus dikeringkan selama 10-15 hari di tempat teduh agar kulitnya menjadi awet. Kentang sangat ideal untuk tumpangsari, terutama dengan tebu, adas, bawang, mustard, gandum, atau biji rami."
+                        )
+                    with st.expander("Tanah 🪴"):
+                        st.write(
+                            "Kentang dapat ditanam hampir di semua jenis tanah kecuali tanah salin dan alkali. Tanah yang secara alami gembur dan menawarkan resistensi paling sedikit terhadap pertumbuhan umbi lebih disukai. Tanah lempung dan tanah berpasir, kaya akan bahan organik dan dengan drainase dan aerasi yang baik paling cocok untuk budidaya tanaman kentang. Tanah dengan kisaran pH 5,2-6,4 dianggap ideal."
+                        )
+                    with st.expander("Iklim ☁️"):
+                        st.write(
+                            "Kentang adalah tanaman iklim sedang, namun tumbuh di beragam kondisi iklim. Tanaman ini ditanam hanya di tempat-tempat di mana suhu musim tanam cukup dingin. Pertumbuhan vegetatif tanaman ini terbaik pada suhu 24 °C sedangkan pengembangan umbi cocok pada suhu 20 °C. Oleh karenanya, kentang ditanam sebagai tanaman musim panas di perbukitan dan sebagai tanaman musim dingin di daerah tropis dan subtropis. Tanaman ini dapat ditanam hingga ketinggian 3000 m di atas permukaan laut."
+                        )
