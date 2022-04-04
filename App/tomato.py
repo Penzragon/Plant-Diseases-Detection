@@ -186,7 +186,7 @@ def app():
         pred = tomato_model.predict(np.expand_dims(img, axis=0))
         return pred
 
-    tomato_model = tf.keras.models.load_model("tomato_model2.h5")
+    tomato_model = tf.keras.models.load_model("unknown_model.h5")
     class_name = [
         "Bacterial Spot",
         "Early Blight",
@@ -198,6 +198,7 @@ def app():
         "Yellow Leaf Curl Virus",
         "Tomato Mosaic Virus",
         "Healthy",
+        "unknown",
     ]
 
     options = st.selectbox("Upload an image", ("Upload", "URL"))
@@ -225,7 +226,9 @@ def app():
             with col1:
                 st.image(img, use_column_width=True)
             with col2:
-                if class_name[np.argmax(pred)] != "Healthy":
+                if class_name[np.argmax(pred)] == "unknown":
+                    st.error("Kami tidak dapat menentukan penyakit tanaman ini.")
+                elif class_name[np.argmax(pred)] != "Healthy":
                     st.markdown(
                         "<h4 style='text-align: center;'>Keterangan Penyakit</h4>",
                         unsafe_allow_html=True,
