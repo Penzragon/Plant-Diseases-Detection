@@ -226,10 +226,19 @@ def app():
                 st.image(img, use_column_width=True)
             with col2:
                 if class_name[np.argmax(pred)] != "Healthy":
+                    st.markdown(
+                        "<h4 style='text-align: center;'>Keterangan Penyakit</h4>",
+                        unsafe_allow_html=True,
+                    )
                     with st.expander("Gejala 🔬"):
                         st.write(descriptions[class_name[np.argmax(pred)]]["Gejala"])
                     with st.expander("Penyebab 🦠"):
                         st.write(descriptions[class_name[np.argmax(pred)]]["Penyebab"])
+
+                    st.markdown(
+                        "<h4 style='text-align: center;'>Penanganan</h4>",
+                        unsafe_allow_html=True,
+                    )
                     with st.expander("Pengendalian Hayati 🌿"):
                         st.write(
                             descriptions[class_name[np.argmax(pred)]][
