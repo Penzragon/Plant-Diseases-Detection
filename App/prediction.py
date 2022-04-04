@@ -20,7 +20,7 @@ def app():
         unsafe_allow_html=True,
     )
 
-    PLANT = {"Tomat🍅": tomato, "Jagung🌽": corn, "Kentang🥔": potato}
+    PLANT = {"Jagung🌽": corn, "Kentang🥔": potato, "Tomat🍅": tomato}
 
     st.sidebar.title("Plant")
     plant = st.sidebar.selectbox("Choose a plant", list(PLANT.keys()))
