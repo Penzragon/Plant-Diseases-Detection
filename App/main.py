@@ -3,7 +3,7 @@ import home
 import prediction
 
 st.set_page_config(
-    page_title="Plant Diseases Detection",
+    page_title="Plant DR",
     page_icon="🌱",
     layout="wide",
     initial_sidebar_state="expanded",
