@@ -186,7 +186,7 @@ def app():
         pred = tomato_model.predict(np.expand_dims(img, axis=0))
         return pred
 
-    tomato_model = tf.keras.models.load_model("unknown_model.h5")
+    tomato_model = tf.keras.models.load_model("tomato_model2.h5")
     class_name = [
         "Bacterial Spot",
         "Early Blight",

@@ -66,8 +66,8 @@ def app():
         pred = potato_model.predict(np.expand_dims(img, axis=0))
         return pred
 
-    potato_model = tf.keras.models.load_model("potato_model.h5")
-    class_name = ["Early Blight", "Late Blight", "Healthy"]
+    potato_model = tf.keras.models.load_model("potato_models.h5")
+    class_name = ["Early Blight", "Late Blight", "Healthy", "Unknown"]
 
     options = st.selectbox("Upload an image", ("Upload", "URL"))
 
@@ -94,7 +94,9 @@ def app():
             with col1:
                 st.image(img, use_column_width=True)
             with col2:
-                if class_name[np.argmax(pred)] != "Healthy":
+                if class_name[np.argmax(pred)] == "Unknown":
+                    st.error("Kami tidak dapat menentukan penyakit tanaman ini.")
+                elif class_name[np.argmax(pred)] != "Healthy":
                     st.markdown(
                         "<h4 style='text-align: center;'>Keterangan Penyakit</h4>",
                         unsafe_allow_html=True,
