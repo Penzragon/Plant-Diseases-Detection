@@ -4,6 +4,8 @@ Plant Diseases Detection and Treatment Recommendation System
 
 ---
 
+![Logo](logo.png)
+
 ## Deployment
 
 Untuk melihat halaman dashboard dari project, dapat ditekan pada tombol di bawah ini.
