@@ -1,6 +1,6 @@
 # PLANT DR
 
-Plant Disease Detection and Prevention Recommendation System
+Plant Diseases Detection and Treatment Recommendation System
 
 ---
 
