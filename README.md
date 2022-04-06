@@ -23,3 +23,5 @@ https://plant-dr.herokuapp.com/
 Dataset yang digunakan adalah dataset yang berisi gambar dari tumbuhan jagung, tomat, dan kentang yang memiliki total kelas sebanyak 17 kelas. Dataset ini dapat dilihat di [Kaggle](https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset).
 
 ## Objective
+
+Membuat model convolutional neural network untuk mendeteksi penyakit pada tumbuhan jagung, tomat, dan kentang.
