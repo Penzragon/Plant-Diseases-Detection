@@ -24,4 +24,4 @@ Dataset yang kita gunakan adalah dataset gambar dari daun-daun tumbuhan yang ter
 
 ## Objective
 
-Membuat model convolutional neural network untuk mendeteksi penyakit pada tumbuhan jagung, tomat, dan kentang.
+Membuat model convolutional neural network yang dapat mendeteksi penyakit pada tumbuhan jagung, tomat, dan kentang berdasarkan kondisi daunnya dan memberikan rekomendasi penanganan terhadap penyakit tersebut.
