@@ -20,7 +20,7 @@ https://plant-dr.herokuapp.com/
 
 ## Dataset
 
-Dataset yang digunakan adalah dataset yang berisi gambar dari tumbuhan jagung, tomat, dan kentang yang memiliki total kelas sebanyak 17 kelas. Dataset ini dapat dilihat di [Kaggle](https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset).
+Dataset yang kita gunakan adalah dataset gambar dari daun-daun tumbuhan yang terkena penyakit yang bersumber dari kaggle, dataset ini berisi sekitar 28rb gambar dengan 13 jenis tumbuhan dan 38 kelas penyakit, namun pada project kali ini kita haya akan menggunakan 3 jenis tumbuhan yaitu jagung, tomat, dan ketang. Dataset ini dapat dilihat di [Kaggle](https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset).
 
 ## Objective
 
